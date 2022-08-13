@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/main-logo-p.jpg" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>FIRSTLOVE ASSEMBLY LAGOS</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section ">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <img src="images/Tittle-logo.png" alt="">
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="course.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="teacher.html">Ministers</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="LiveStream.html">LiveStream</a>
+                </li> -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container">
+              <a href="">
+                <span>
+                  Login
+                </span>
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Contact Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="mail.php" method="post">
+              <script type="text/javascript">
+  function validateName() {
+
+    var name = document.getElementById('contact-name').value;
+
+    if(name.length == 0) {
+
+      producePrompt('Name is required', 'name-error' , 'red')
+      return false;
+
+  }
+
+  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+      producePrompt('First and last name, please.','name-error', 'red');
+      return false;
+
+  }
+
+  producePrompt('Valid', 'name-error', 'green');
+  return true;
+
+}
+
+function validatePhone() {
+
+var phone = document.getElementById('contact-phone').value;
+
+if(phone.length == 0) {
+    producePrompt('Phone number is required.', 'phone-error', 'red');
+    return false;
+}
+
+if(phone.length != 10) {
+    producePrompt('Include area code.', 'phone-error', 'red');
+    return false;
+}
+
+if(!phone.match(/^[0-9]{10}$/)) {
+    producePrompt('Only digits, please.' ,'phone-error', 'red');
+    return false;
+}
+
+producePrompt('Valid', 'phone-error', 'green');
+return true;
+
+}
+
+function validateEmail () {
+
+var email = document.getElementById('contact-email').value;
+
+if(email.length == 0) {
+
+  producePrompt('Email Invalid','email-error', 'red');
+  return false;
+
+}
+
+if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+  producePrompt('Email Invalid', 'email-error', 'red');
+  return false;
+
+}
+
+producePrompt('Valid', 'email-error', 'green');
+return true;
+
+}
+
+function validateMessage() {
+var message = document.getElementById('contact-message').value;
+var required = 30;
+var left = required - message.length;
+
+if (left > 0) {
+  producePrompt(left + ' more characters required','message-error','red');
+  return false;
+}
+
+producePrompt('Valid', 'message-error', 'green');
+return true;
+
+}
+
+function validateForm() {
+if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+  return false;
+}
+else {
+
+}
+}
+
+function jsShow(id) {
+document.getElementById(id).style.display = 'block';
+}
+
+function jsHide(id) {
+document.getElementById(id).style.display = 'none';
+}
+
+
+function producePrompt(message, promptLocation, color) {
+
+document.getElementById(promptLocation).innerHTML = message;
+document.getElementById(promptLocation).style.color = color;
+
+}
+
+</script>
+</head>
+
+
+
+    <div class="form-group">
+      <label for="contact-name">Name</label>
+      <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+      <span class='error-message' id='name-error'></span>
+  </div>
+
+  <div class="form-group">
+      <label for="contact-phone">Phone Number</label>
+      <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+      <span class='error-message' id='phone-error'></span>
+  </div>
+
+  <div class="form-group" >
+      <label for="contact-email">Email address</label>
+      <input type="email" class="form-control" id="contact-email" name="email" placeholder="Your Email" onkeyup='validateEmail()'>
+      <span class='error-message' id='email-error'></span>
+  </div>   
+
+  <div class="form-group">
+      <label for='contactMessage'>Your Message</label>
+      <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+      <span class='error-message' id='message-error'></span>
+  </div>
+
+  
+              <div class="btn-box">
+                <button onclick='validateForm()' class="btn btn-default">Send</button>
+  <span class='error-message' id='submit-error'></span>
+                <button id="showMap" class="map_btn">Map</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+  
+   <!-- FIRSTLOVE ASSEMBLY facebook Log -->
+
+<title>FIRSTLOVE ASSEMBLY || Contact Us</title>
+
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+	
+	
+	
+    </script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="aBzO026z"></script>
+
+  <div class="right">
+   
+   <div class="fb-page" data-href="https://www.facebook.com/flarumuokwuta/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/flarumuokwuta/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/flarumuokwuta/">FIRSTLOVE ASSEMBLY</a></blockquote></div>
+   
+  </div>
+</div>
+
+  <!-- info section -->
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="info_top ">
+        <div class="row ">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_detail">
+              <a href="https://www.firstloveassembly.org.ng/index.html">
+                <h4>
+                <img src="images/main-logo-p.jpg" alt="" style="border-radius:12rem; border: 4px solid blue;">
+                </h4>
+              </a>
+              <!-- <p>
+                A warm gratitude from the official website of FirstLove Assembly Lagos, thanks for your time and remain bless, Testimonies will forever be your ride on for till we'all depart from the world.
+              </p> -->
+              <div class="social_box">
+                <a href="https://m.facebook.com/officialfirstloveassemblylagos/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/flarumuokwuta?s=20&t=Lej5i0MHpYr77MpIZTJyeA">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/firstloveassemblylagos?igshid=YmMyMTA2M2Y=">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <h4>
+              Contact us
+            </h4>
+            <p>
+              Address: 1 iya Oloye crescent idiroko estate Anthony maryland 
+            </p>
+            <div class="contact_nav">
+              <a href="https://www.google.com/maps/place/sbey+clothings/@6.57761,3.36649,18z/data=!4m5!3m4!1s0x0:0x2d3d308e6d523c7b!8m2!3d6.5774975!4d3.3664774?hl=en-US">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D2348099434343%26text%3DLink%253A%250Ahttps%253A%252F%252Ffb.me%252F3OW9s4Zi8%250A%250AI%2520saw%2520this%2520on%2520Facebook...%26source_url%3Dhttps%253A%252F%252Ffb.me%252F3OW9s4Zi8%26icebreaker%3DI%2520saw%2520this%2520on%2520Facebook...%26app%3Dfacebook%26entry_point%3Dpost_cta%26jid%3D2348099434343%2540s.whatsapp.net%26context%3DAbtJuVyE5gyQ6Y-e5sRO0VCh9s4Az8uUmXu_mGccTj6iNiXR1_dvNzX_OeNXxnZUs-cqWh09qTNix6WyDYaYJCVwkaB36HVZAQZxAA6PaECJTuaVy7THzLnYWT7vd6qRJgDyQax0IMlNgLsn5KrG5bt39xGHAvjVSTT9alzk5ZRwMsNrz6QDR-oDBuQo9nonC4P9_daUr-sv8I12PlSELWsPrMgDVZtFix18_nS8Ifl-2g&h=AT1fG3ffg4tmYR6iZfQCyyguZEgdSGLoZbJ02p4B4IHupnXrMMP8Huj-jpdEkfXayOIAvZwUJ5X2O-N81tCmCub-257dl2I5U3rYusKcHAn0ZB4hCFBYJJJQxzoO_ELsJM1k1aG791qzbSOy_LTQ_Q&__tn__=*J%2CmH-R&c[0]=AT3CujpJANorl3QN-C3jKOpxumXRPAXROQmMkoLI59-ciZygtJglVcbUdHRFFPkV6VtMcLcfNFBYgyq_Qy0Y3CPcQHByJOe2iqU5ypy6kNnNnT90cRw3CIjFw8RoP_EY1uUYf7_nC0GZSCm6Kjx15xNjBfPoXlpl3qRePz8LAWs8MQ9FvhqRhgG6uWjxiju2QPDBvqFG">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call : +234 809 943 4343 
+                </span>
+              </a>
+              <a href="firstloveassemblylagos@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Email : demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                SIGN UP TO OUR NEWSLETTER
+              </h4>
+              <form action="firstloveassemblylagos@gmail.com">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+       <span id="displayYear"></span>
+      </p>
+      <p>&copy; 2019 -
+        <script type="text/javascript">
+      document.write(new Date().getFullYear());
+            </script>
+      . <strong>FIRSTLOVE ASSEMBLY</strong></p>
+     <p>TELEPHONE: +2348034523300<br>
+       EMAIL: info@firstloveassembly.org.ng</p>
+     <p class="footer">All Rights Reserved. Site designed by <a href="https://wa.me/message/IWLYJM4ECSSNG1">Joseph Onahi</a></p>
+     <p class="footer"><strong><a href="#top">BACK TO TOP</a></strong></p>
+    
+    </div>
+  </footer>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
